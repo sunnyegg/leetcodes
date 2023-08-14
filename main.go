@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"leetcodes/palindrome"
+	romantoint "leetcodes/romanToInt"
 	"leetcodes/twosum"
 )
 
@@ -19,4 +20,8 @@ func main() {
 	palindromeRes := palindrome.Calc(palindromeNums)
 
 	fmt.Println(palindromeRes)
+
+	// roman to int
+	romRes := romantoint.Calc("III")
+	fmt.Println(romRes)
 }
