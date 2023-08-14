@@ -19,49 +19,11 @@ func Calc(s string) int {
 			break
 		}
 
-		if string(s[i]) == "I" {
-			if string(s[i+1]) == "V" {
-				output += m[string(s[i+1])] - m[string(s[i])]
-				i++
-				continue
-			}
-
-			if string(s[i+1]) == "X" {
-				output += m[string(s[i+1])] - m[string(s[i])]
-				i++
-				continue
-			}
+		if m[string(s[i])] < m[string(s[i+1])] {
+			output -= m[string(s[i])]
+		} else {
+			output += m[string(s[i])]
 		}
-
-		if string(s[i]) == "X" {
-			if string(s[i+1]) == "L" {
-				output += m[string(s[i+1])] - m[string(s[i])]
-				i++
-				continue
-			}
-
-			if string(s[i+1]) == "C" {
-				output += m[string(s[i+1])] - m[string(s[i])]
-				i++
-				continue
-			}
-		}
-
-		if string(s[i]) == "C" {
-			if string(s[i+1]) == "D" {
-				output += m[string(s[i+1])] - m[string(s[i])]
-				i++
-				continue
-			}
-
-			if string(s[i+1]) == "M" {
-				output += m[string(s[i+1])] - m[string(s[i])]
-				i++
-				continue
-			}
-		}
-
-		output += m[string(s[i])]
 	}
 
 	return output

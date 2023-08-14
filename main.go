@@ -22,6 +22,6 @@ func main() {
 	fmt.Println(palindromeRes)
 
 	// roman to int
-	romRes := romantoint.Calc("III")
+	romRes := romantoint.Calc("MCMXCIV")
 	fmt.Println(romRes)
 }
