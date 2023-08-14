@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	longestcommonprefix "leetcodes/longestCommonPrefix"
 	"leetcodes/palindrome"
 	romantoint "leetcodes/romanToInt"
 	"leetcodes/twosum"
@@ -24,4 +25,9 @@ func main() {
 	// roman to int
 	romRes := romantoint.Calc("MCMXCIV")
 	fmt.Println(romRes)
+
+	// longest common prefix
+	commonPrefix := []string{"flower", "flow", "flight"}
+	commonPrefixRes := longestcommonprefix.Calc(commonPrefix)
+	fmt.Println(commonPrefixRes)
 }
