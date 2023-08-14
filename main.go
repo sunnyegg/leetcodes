@@ -6,6 +6,7 @@ import (
 	"leetcodes/palindrome"
 	romantoint "leetcodes/romanToInt"
 	"leetcodes/twosum"
+	validparentheses "leetcodes/validParentheses"
 )
 
 func main() {
@@ -30,4 +31,9 @@ func main() {
 	commonPrefix := []string{"flower", "flow", "flight"}
 	commonPrefixRes := longestcommonprefix.Calc(commonPrefix)
 	fmt.Println(commonPrefixRes)
+
+	// valid parentheses
+	validParentheses := "[[[]"
+	validParenthesesRes := validparentheses.IsValid(validParentheses)
+	fmt.Println(validParenthesesRes)
 }
