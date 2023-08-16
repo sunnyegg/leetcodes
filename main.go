@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	longestcommonprefix "leetcodes/longestCommonPrefix"
+	mergetwosortedlists "leetcodes/mergeTwoSortedLists"
 	"leetcodes/palindrome"
 	romantoint "leetcodes/romanToInt"
 	"leetcodes/twosum"
@@ -33,7 +34,13 @@ func main() {
 	fmt.Println(commonPrefixRes)
 
 	// valid parentheses
-	validParentheses := "[[[]"
-	validParenthesesRes := validparentheses.IsValid(validParentheses)
+	sortedLists := "[[[]"
+	validParenthesesRes := validparentheses.IsValid(sortedLists)
 	fmt.Println(validParenthesesRes)
+
+	// merge two sorted lists
+	sortedLists1 := &mergetwosortedlists.ListNode{Val: 1, Next: &mergetwosortedlists.ListNode{Val: 2, Next: &mergetwosortedlists.ListNode{Val: 4}}}
+	sortedLists2 := &mergetwosortedlists.ListNode{Val: 1, Next: &mergetwosortedlists.ListNode{Val: 3, Next: &mergetwosortedlists.ListNode{Val: 4}}}
+	mergedRes := mergetwosortedlists.Merge(sortedLists1, sortedLists2)
+	fmt.Println(mergedRes)
 }
