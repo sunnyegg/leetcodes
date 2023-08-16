@@ -6,6 +6,7 @@ import (
 	mergetwosortedlists "leetcodes/mergeTwoSortedLists"
 	"leetcodes/palindrome"
 	removeduplicates "leetcodes/removeDuplicatesFromSortedArray"
+	removeelement "leetcodes/removeElement"
 	romantoint "leetcodes/romanToInt"
 	"leetcodes/twosum"
 	validparentheses "leetcodes/validParentheses"
@@ -49,4 +50,9 @@ func main() {
 	sortedArray := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
 	sortedArrayRes := removeduplicates.RemoveDuplicates(sortedArray)
 	fmt.Println(sortedArrayRes)
+
+	// remove element
+	els := []int{0, 1, 2, 2, 3, 0, 4, 2}
+	elsRes := removeelement.RemoveElement(els, 2)
+	fmt.Println(elsRes)
 }
