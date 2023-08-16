@@ -5,6 +5,7 @@ import (
 	longestcommonprefix "leetcodes/longestCommonPrefix"
 	mergetwosortedlists "leetcodes/mergeTwoSortedLists"
 	"leetcodes/palindrome"
+	removeduplicates "leetcodes/removeDuplicatesFromSortedArray"
 	romantoint "leetcodes/romanToInt"
 	"leetcodes/twosum"
 	validparentheses "leetcodes/validParentheses"
@@ -43,4 +44,9 @@ func main() {
 	sortedLists2 := &mergetwosortedlists.ListNode{Val: 1, Next: &mergetwosortedlists.ListNode{Val: 3, Next: &mergetwosortedlists.ListNode{Val: 4}}}
 	mergedRes := mergetwosortedlists.Merge(sortedLists1, sortedLists2)
 	fmt.Println(mergedRes)
+
+	// remove duplicates in sorted array
+	sortedArray := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
+	sortedArrayRes := removeduplicates.RemoveDuplicates(sortedArray)
+	fmt.Println(sortedArrayRes)
 }
