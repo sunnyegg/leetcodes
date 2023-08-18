@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	findindexinstring "leetcodes/findIndexInString"
 	longestcommonprefix "leetcodes/longestCommonPrefix"
 	mergetwosortedlists "leetcodes/mergeTwoSortedLists"
 	"leetcodes/palindrome"
@@ -55,4 +56,9 @@ func main() {
 	els := []int{0, 1, 2, 2, 3, 0, 4, 2}
 	elsRes := removeelement.RemoveElement(els, 2)
 	fmt.Println(elsRes)
+
+	// find index string in a string
+	str := "mississippi"
+	strRes := findindexinstring.StrStr(str, "issip")
+	fmt.Println(strRes)
 }
