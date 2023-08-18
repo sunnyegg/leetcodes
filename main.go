@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	findindexinstring "leetcodes/findIndexInString"
+	lengthoflastword "leetcodes/lengthOfLastWord"
 	longestcommonprefix "leetcodes/longestCommonPrefix"
 	mergetwosortedlists "leetcodes/mergeTwoSortedLists"
 	"leetcodes/palindrome"
@@ -72,4 +73,8 @@ func main() {
 	// square root
 	sqrtRes := sqrt.MySqrt(8)
 	fmt.Println(sqrtRes)
+
+	// length of last word
+	lolwRes := lengthoflastword.LengthOfLastWord("a")
+	fmt.Println(lolwRes)
 }
