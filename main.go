@@ -10,6 +10,7 @@ import (
 	removeelement "leetcodes/removeElement"
 	romantoint "leetcodes/romanToInt"
 	searchinsertposition "leetcodes/searchInsertPosition"
+	"leetcodes/sqrt"
 	"leetcodes/twosum"
 	validparentheses "leetcodes/validParentheses"
 )
@@ -67,4 +68,8 @@ func main() {
 	searchNums := []int{1, 3, 5, 6}
 	searchNumsRes := searchinsertposition.SearchInsert(searchNums, 7)
 	fmt.Println(searchNumsRes)
+
+	// square root
+	sqrtRes := sqrt.MySqrt(8)
+	fmt.Println(sqrtRes)
 }
