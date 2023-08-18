@@ -9,6 +9,7 @@ import (
 	removeduplicates "leetcodes/removeDuplicatesFromSortedArray"
 	removeelement "leetcodes/removeElement"
 	romantoint "leetcodes/romanToInt"
+	searchinsertposition "leetcodes/searchInsertPosition"
 	"leetcodes/twosum"
 	validparentheses "leetcodes/validParentheses"
 )
@@ -61,4 +62,9 @@ func main() {
 	str := "mississippi"
 	strRes := findindexinstring.StrStr(str, "issip")
 	fmt.Println(strRes)
+
+	// search insert position
+	searchNums := []int{1, 3, 5, 6}
+	searchNumsRes := searchinsertposition.SearchInsert(searchNums, 7)
+	fmt.Println(searchNumsRes)
 }
